@@ -1,0 +1,26 @@
+[package]
+name = "bevy_split_canvas"
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+description = "A Bevy plugin to split the WASM canvas into multiple canvases."
+readme = "README.md"
+categories = ["game-engines", "rendering"]
+keywords = ["bevy", "web", "wasm", "rendering", "canvas"]
+homepage = "https://github.com/chamaloriz/bevy_split_canvas"
+repository = "https://github.com/chamaloriz/bevy_split_canvas"
+exclude = [
+    "assets/*",
+]
+
+[dependencies]
+bevy = "0.17.3"
+wasm-bindgen = "0.2.106"
+web-sys = { version = "0.3.83", default-features = false, features = [
+    "Window",
+    "Document",
+    "ImageData",
+    "CssStyleDeclaration",
+    "HtmlCanvasElement",
+    "CanvasRenderingContext2d"
+]}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Splitting Demo</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      canvas {
+        background-color: gray;
+      }
+
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      body > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      style="visibility: hidden; position: absolute;"
+      Can be added to hide the main canvas 
+    -->
+    <canvas id="canvas"></canvas>
+    <br>
+    <div>
+      <canvas id="canvas1"></canvas>
+      <canvas id="canvas2"></canvas>
+      <canvas id="canvas3"></canvas>
+      <canvas id="canvas4"></canvas>
+    </div>
+    <script type="module">
+      import init from "./pkg/bevy_split_canvas_example.js";
+      
+      init().then(() => {
+        console.log("WASM Loaded, starting app...");
+      }).catch(e => {
+        console.error("Init failed:", e);
+      });
+    </script>
+  </body>
+</html>
