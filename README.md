@@ -13,3 +13,12 @@ wasm-pack build "examples/" --target web
 # To run a simple webserver
 cd examples && python3 -m http.server 8000
 ```
+
+## Compatible Bevy versions
+
+The `main` branch is compatible with the latest Bevy release.
+
+| `bevy_split_canvas` | `bevy` |
+| :--           | :--    |
+| `0.18`        | `0.18` |
+| `0.1`        | `0.17` |
