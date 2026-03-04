@@ -20,5 +20,5 @@ The `main` branch is compatible with the latest Bevy release.
 
 | `bevy_split_canvas` | `bevy` |
 | :--           | :--    |
-| `0.18`        | `0.18` |
+| `0.18.x`        | `0.18.x` |
 | `0.1`        | `0.17` |

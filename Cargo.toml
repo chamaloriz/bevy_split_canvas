@@ -1,6 +1,6 @@
 [package]
 name = "bevy_split_canvas"
-version = "0.18.0"
+version = "0.18.1"
 edition = "2024"
 license = "MIT OR Apache-2.0"
 description = "A Bevy plugin to split the WASM canvas into multiple canvases."
@@ -14,7 +14,7 @@ exclude = [
 ]
 
 [dependencies.bevy]
-version = "0.18.0"
+version = "0.18.1"
 default-features = false
 features = [
     "bevy_render"
